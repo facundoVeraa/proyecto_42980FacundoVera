@@ -4,53 +4,26 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-
-.divheader{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .navbar{
-    background-color: white;
-}
-
-.navbar-toggler{
-    color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 .logo{
-    width: 410px;
-    height: 200px;
-    
+    width: 160px;
+    height: 90px;  
 }
 
-.nav{
+.nav-link{
     font-family: sans-serif;
-    display: flex;
-    padding-top: 0px;
-    padding-left: 5px;
-    background-color: black;
-    display: inline-block;
-    font-size: 1.3rem
+    color: white;
 }
 
-.bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-decoration: none;
-    margin: 5px;
-    color: black;
-    border-radius: 3px;
+.navbar-toggler-icon{
+    background-color: rgba(128, 128, 128, 0.247);
 }
 
-li{
-    list-style-type: none;
-    text-decoration: none;
-    margin: 10px;
-    padding: 0 20px;
-    background-color: black;
+.navbar-toggler{
+    background-color: rgb(85, 85, 85);
 }
 
 .titulos{
@@ -101,6 +74,7 @@ main{
     font-family: sans-serif;
     color: black;
     font-size: 20px;
+    padding-bottom: 5px;
 }
 
 .productos{
@@ -110,10 +84,17 @@ main{
    width: 300px;
    height: 300px;
 }
+
+.buy{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 .compras{
     font-family: sans-serif;
     font-size: 20px;
     color: black;
+    margin: 0 auto;
 }
 .comunicacion{
     display: flex;
@@ -173,19 +154,6 @@ footer{
         background-repeat: no-repeat;
     }
 
-    .divlogo{
-        margin: 0 auto;
-    }
-
-    .logo{
-        width: 300px;
-        height: 200px;
-    }
-
-    header{
-        width: 100%;
-    }
-
     main{
         margin: 25px;
     }
@@ -200,20 +168,6 @@ footer{
         height: 350px;
     }
 
-    .divheader{
-        padding: 1px;
-        flex-direction: column;    
-    }
-
-    .nav{
-        margin: 0px;
-        border: 5px;
-    }
-
-    li{
-        padding: 4px;
-    }
-
     .titulos{
         padding: 20px;
         font-size: 30px;
@@ -226,39 +180,6 @@ footer{
     iframe{
         width: 480px;
     } 
-}
-
-@media (max-width:580px){
-    .bar{
-        margin-top: 0px;
-        display: flex;
-        display: block;
-        text-align: center;
-    }
-
-    .titulos{
-        margin-top: 200px;
-    }
-
-    .productos{
-        margin-top: 120px;
-    }
-
-    .textfooterproductos{
-        margin-top: 180px;
-    }
-    .sucursales{
-        margin-top: 200px;
-    }
-
-    .nosotros{
-        margin-top: 200px;
-    }
-
-    .contacto{
-        margin-top: 200px;
-    }
-
 }
 
 @media (max-width: 540px){
