@@ -1,0 +1,23 @@
+header{
+    .navbar{
+        background-color: map-get($map: $colors , $key: black );
+        .logo{
+            width: 160px;
+            height: 90px;  
+        }
+        .navbar-toggler{
+            background-color: rgb(85, 85, 85);
+            .navbar-toggler-icon{
+                background-color: map-get($map: $colors , $key: grey );
+            }
+            
+        }
+        .nav-link{
+            font-family: $font;
+            color: map-get($map: $colors , $key: white );
+            text-decoration: none;  
+            }
+        
+    }
+
+}

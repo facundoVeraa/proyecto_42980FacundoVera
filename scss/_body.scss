@@ -1,0 +1,15 @@
+body{
+    background-image: url(../assets/img/index_img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:600px){
+    body{
+        background-image: url(../assets/img/imgindex_1000px.jfif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

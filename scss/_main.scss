@@ -1,0 +1,121 @@
+main{
+    background-color: rgba(128, 128, 128, 0.521);
+    background-position: center;
+    padding: 20px;
+    margin: 115px;
+    padding-top: 10px;
+    width: auto;
+    height: auto;
+
+    .buy{
+        @include flexible(flex , column , center);
+
+        .productos{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 300px;
+
+        .textmain{
+        font-family: $font;
+        font-size: 28px;
+        color: map-get($map: $colors , $key: black );
+        margin: 0 auto;
+        }
+
+        .compras{
+            font-family: $font;
+            font-size: 20px;
+            color: ($map: $colors , $key: black );
+            margin: 0 auto;
+        }
+        
+        }
+    }
+
+}
+
+@media (max-width:1200px){
+
+    .titulos{
+        padding-top: 40px;
+    }
+
+}
+
+@media (max-width:910px){
+    .imgindex1{
+        margin: 0 auto;
+        width: 500px ;
+    }
+
+    main{
+        margin: 35px;
+    }
+
+    .sucursal{
+        width: 500px;
+    }
+}
+
+
+@media (max-width:600px){
+
+    main{
+        margin: 25px;
+    }
+
+    .imgindex1{
+        width: 450px;
+        height: 300px;
+    }
+
+    .imgindex2{
+        width: 300px;
+        height: 350px;
+    }
+
+    .titulos{
+        padding: 20px;
+        font-size: 30px;
+    } 
+    
+    .principales{
+        margin-top: 0px;
+    }
+
+    .sucursal{
+        width: 480px;
+    } 
+}
+
+@media (max-width: 540px){
+    .imgindex1{
+        width: 350px;
+    }
+
+    .sucursal{
+        width: 350px;
+    }
+}
+
+@media (max-width: 430px){
+    .imgindex1{
+        width: 300px;
+    }
+
+    .sucursal{
+        width: 300px;
+    }
+}
+
+@media (max-width: 370px){
+    .imgindex1{
+        width: 250px;
+    }
+
+    .sucursal{
+        width: 250px;
+    }
+}

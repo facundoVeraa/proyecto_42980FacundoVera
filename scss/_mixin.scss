@@ -1,0 +1,5 @@
+@mixin flexible( $display , $direction , $align ) {
+    display: $display;
+    flex-direction: $direction;
+    text-align: $align;
+}

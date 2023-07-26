@@ -1,0 +1,38 @@
+footer {
+    background-color: map-get($map: $colors , $key: black );
+    color: map-get($map: $colors , $key: white );
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+    .divfooter {
+        flex: 1;
+        margin: 10px;
+
+        .h2footer {
+            margin-bottom: 10px;
+            border-bottom: 2px solid map-get($map: $colors , $key: white );
+        }
+
+        .ulfooter {
+            list-style: none;
+            padding: 0;
+
+            .lifooter {
+                margin-bottom: 5px;
+
+                .ancla {
+                    color: map-get($map: $colors , $key: white );
+                    text-decoration: none;
+                    transition: color 0.3s;
+                }
+                
+                .ancla:hover {
+                    color: blue;
+                }
+            }
+        }
+        
+    }
+}
