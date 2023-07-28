@@ -1,5 +1,11 @@
-@mixin flexible( $display , $direction , $align ) {
+@mixin flex( $display , $left , $right ) {
     display: $display;
+    margin-left: $left;
+    margin-right: $right;
+}
+
+@mixin buy( $dis , $direction , $align) {
+    display: $dis;
     flex-direction: $direction;
     text-align: $align;
 }

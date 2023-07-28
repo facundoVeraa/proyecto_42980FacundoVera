@@ -1,5 +1,6 @@
 main{
-    background-color: rgba(128, 128, 128, 0.521);
+    background-image: linear-gradient(to left bottom, #ffffff86, #e2e2e285, #c5c5c57e, #a9a9a983, #8e8e8e81, #79797981, #646464a6, #505050b4, #3c3c3cb9, #2a2a2ab7, #191919c5, #000000c7);
+    /*background-color: rgba(128, 128, 128, 0.637);*/
     background-position: center;
     padding: 20px;
     margin: 115px;
@@ -8,26 +9,24 @@ main{
     height: auto;
 
     .buy{
-        @include flexible(flex , column , center);
+        @include buy( flex , column , center );
 
         .productos{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        @include flex( block , auto , auto);
         width: 300px;
         height: 300px;
 
         .textmain{
         font-family: $font;
         font-size: 28px;
-        color: map-get($map: $colors , $key: black );
-        margin: 0 auto;
+        color: map-get( $colors , "white" );
+        text-align: center;
         }
 
         .compras{
             font-family: $font;
             font-size: 20px;
-            color: ($map: $colors , $key: black );
+            color: map-get( $colors , "white" );
             margin: 0 auto;
         }
         
@@ -107,6 +106,10 @@ main{
 
     .sucursal{
         width: 300px;
+    }
+
+    footer{
+        flex-direction: column;
     }
 }
 

@@ -1,6 +1,6 @@
 .titulos{
     font-family: $font;
-    color: map-get($map: $colors , $key: white );
+    color: map-get( $colors , "white" );
     background-color: rgba(128, 128, 128, 0.438);
     font-size: 37px;
     text-align: center;
@@ -10,6 +10,11 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transition: transform 0.3s;
+}
+
+.imgindex1:hover{
+    transform: scale(1.05);
 }
 
 .imgindex2{
@@ -23,13 +28,13 @@
 .textfooterproductos{
     font-family:$font;
     font-size: 28px;
-    color: map-get($map: $colors , $key: black );
+    color: map-get( $colors , "black" );
     text-align: center;
 }
 
 .principales{
     font-family:$font;
-    color: map-get($map: $colors , $key: black );
+    color: map-get( $colors , "black" );
     font-size: 20px;
     padding-bottom: 5px;
 }
@@ -37,7 +42,7 @@
 .textfooterproductos{
     font-family:$font;
     font-size: 28px;
-    color: map-get($map: $colors , $key: black );
+    color: map-get( $colors , "black" );
     text-align: center;
 }
 

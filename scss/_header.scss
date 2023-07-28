@@ -1,6 +1,6 @@
 header{
     .navbar{
-        background-color: map-get($map: $colors , $key: black );
+        background-color: map-get( $colors , "black" );
         .logo{
             width: 160px;
             height: 90px;  
@@ -8,14 +8,19 @@ header{
         .navbar-toggler{
             background-color: rgb(85, 85, 85);
             .navbar-toggler-icon{
-                background-color: map-get($map: $colors , $key: grey );
+                background-color: map-get( $colors , "grey" );
             }
             
         }
         .nav-link{
             font-family: $font;
-            color: map-get($map: $colors , $key: white );
-            text-decoration: none;  
+            color: map-get( $colors , "white" );
+            text-decoration: none; 
+            transition: color 0.3s; 
+            }
+        
+            .ancla:hover {
+                color: blue;
             }
         
     }
