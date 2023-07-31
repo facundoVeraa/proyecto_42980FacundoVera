@@ -1,26 +1,10 @@
 .titulos {
   font-family: sans-serif;
   color: white;
-  background-color: rgba(128, 128, 128, 0.438);
+  background-image: linear-gradient(to left bottom, rgba(255, 255, 255, 0.5254901961), rgba(226, 226, 226, 0.5215686275), rgba(197, 197, 197, 0.4941176471), rgba(169, 169, 169, 0.5137254902), rgba(142, 142, 142, 0.5058823529), rgba(121, 121, 121, 0.5058823529), rgba(100, 100, 100, 0.6509803922), rgba(80, 80, 80, 0.7058823529), rgba(60, 60, 60, 0.7254901961), rgba(42, 42, 42, 0.7176470588), rgba(25, 25, 25, 0.7725490196), rgba(0, 0, 0, 0.7803921569));
   font-size: 37px;
   text-align: center;
-}
-
-.imgindex1 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  transition: transform 0.3s;
-}
-
-.imgindex1:hover {
-  transform: scale(1.05);
-}
-
-.imgindex2 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 15px;
 }
 
 .textfooterproductos {
@@ -39,7 +23,7 @@
 
 .textfooterproductos {
   font-family: sans-serif;
-  font-size: 28px;
+  font-size: 32px;
   color: black;
   text-align: center;
 }
@@ -52,6 +36,11 @@
   margin-right: auto;
 }
 
+.error {
+  display: flex;
+  align-items: center;
+}
+
 header .navbar {
   background-color: black;
 }
@@ -60,10 +49,11 @@ header .navbar .logo {
   height: 90px;
 }
 header .navbar .navbar-toggler {
-  background-color: rgb(85, 85, 85);
+  background-color: rgb(235, 233, 233);
 }
 header .navbar .navbar-toggler .navbar-toggler-icon {
   background-color: grey;
+  background-image: url(../assets/img/png-transparent-carme-marin-perruquers-computer-icons-menu-drop-down-list-hamburger-button-buttons-miscellaneous-angle-text.png);
 }
 header .navbar .nav-link {
   font-family: sans-serif;
@@ -85,10 +75,39 @@ main {
   width: auto;
   height: auto;
 }
+main .imgindex1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s;
+}
+main .imgindex1:hover {
+  transform: scale(1.04);
+}
+main .textmain {
+  font-family: sans-serif;
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+main .imgindex2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s;
+}
+main .imgindex2:hover {
+  transform: scale(1.04);
+}
 main .buy {
   display: flex;
   flex-direction: column;
   text-align: center;
+  color: white;
+}
+main .buy .textfooter {
+  padding: 0px;
 }
 main .buy .productos {
   display: block;
@@ -96,16 +115,20 @@ main .buy .productos {
   margin-right: auto;
   width: 300px;
   height: 300px;
+  transition: transform 0.3s;
 }
-main .buy .productos .textmain {
-  font-family: sans-serif;
-  font-size: 28px;
-  color: white;
-  text-align: center;
+main .buy .productos:hover {
+  transform: scale(1.04);
 }
-main .buy .productos .compras {
+main .buy .comprasproductos {
   font-family: sans-serif;
   font-size: 20px;
+  text-decoration: none;
+}
+main .sucursales .compras {
+  font-family: sans-serif;
+  font-size: 30px;
+  padding-top: 14px;
   color: white;
   margin: 0 auto;
 }
@@ -132,7 +155,7 @@ main .buy .productos .compras {
     margin: 25px;
   }
   .imgindex1 {
-    width: 450px;
+    width: 400px;
     height: 300px;
   }
   .imgindex2 {
@@ -210,17 +233,24 @@ footer .divfooter .ulfooter .lifooter .ancla:hover {
 }
 
 body {
-  background-image: url(../assets/img/index_img.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../assets/img/imgindex_definitivo1920.jpg);
+  /*background-position: center;*/
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1280px) {
   body {
-    background-image: url(../assets/img/imgindex_1000px.jfif);
-    background-size: cover;
-    background-position: center;
+    background-image: url(../assets/img/imgindex_600px.jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+@media (max-width: 640px) {
+  body {
+    background-image: url(../assets/img/imgindex_definitivo1280.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }/*# sourceMappingURL=estilos.css.map */

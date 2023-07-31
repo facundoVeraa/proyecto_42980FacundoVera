@@ -8,28 +8,70 @@ main{
     width: auto;
     height: auto;
 
+        .imgindex1{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            transition: transform 0.3s;
+        }
+        
+        .imgindex1:hover{
+            transform: scale(1.04);
+        }
+
+        .textmain{
+            font-family: $font;
+            font-size: 28px;
+            color: map-get( $colors , "white" );
+            text-align: center;
+            padding: 10px;
+            }
+
+        .imgindex2{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            transition: transform 0.3s;
+        }
+        
+        .imgindex2:hover{
+            transform: scale(1.04);
+        }
+
     .buy{
         @include buy( flex , column , center );
+        color: map-get( $colors , "white" );
+        
+        .textfooter{
+            padding: 0px;           
+        }
 
         .productos{
         @include flex( block , auto , auto);
         width: 300px;
         height: 300px;
-
-        .textmain{
-        font-family: $font;
-        font-size: 28px;
-        color: map-get( $colors , "white" );
-        text-align: center;
+        transition: transform 0.3s;
+        }
+        .productos:hover{
+            transform: scale(1.04);
         }
 
-        .compras{
+        .comprasproductos{
             font-family: $font;
             font-size: 20px;
+            text-decoration: none;
+            
+        }
+
+    }
+
+    .sucursales{
+        .compras{
+            font-family: $font;
+            font-size: 30px;
+            padding-top: 14px;
             color: map-get( $colors , "white" );
             margin: 0 auto;
-        }
-        
         }
     }
 
@@ -66,7 +108,7 @@ main{
     }
 
     .imgindex1{
-        width: 450px;
+        width: 400px;
         height: 300px;
     }
 

@@ -1,29 +1,11 @@
 .titulos{
     font-family: $font;
     color: map-get( $colors , "white" );
-    background-color: rgba(128, 128, 128, 0.438);
+    background-image: linear-gradient(to left bottom, #ffffff86, #e2e2e285, #c5c5c57e, #a9a9a983, #8e8e8e81, #79797981, #646464a6, #505050b4, #3c3c3cb9, #2a2a2ab7, #191919c5, #000000c7);
     font-size: 37px;
     text-align: center;
+    padding-top: 15px;
 }
-
-.imgindex1{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 0.3s;
-}
-
-.imgindex1:hover{
-    transform: scale(1.05);
-}
-
-.imgindex2{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
 
 .textfooterproductos{
     font-family:$font;
@@ -41,7 +23,7 @@
 
 .textfooterproductos{
     font-family:$font;
-    font-size: 28px;
+    font-size: 32px;
     color: map-get( $colors , "black" );
     text-align: center;
 }
@@ -52,4 +34,10 @@
     width: 250px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.error{
+        display: flex;
+        align-items: center;
+
 }

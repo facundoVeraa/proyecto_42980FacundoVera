@@ -1,15 +1,23 @@
 body{
-    background-image: url(../assets/img/index_img.jpg);
-    background-size: cover;
-    background-position: center;
+    background-image: url(../assets/img/imgindex_definitivo1920.jpg);
+    /*background-position: center;*/
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-@media (max-width:600px){
+@media (max-width:1280px){
     body{
-        background-image: url(../assets/img/imgindex_1000px.jfif);
-        background-size: cover;
-        background-position: center;
+        background-image: url(../assets/img/imgindex_600px.jpg);
         background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}
+
+@media (max-width:640px){
+    body{
+        background-image: url(../assets/img/imgindex_definitivo1280.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
